@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <button class="menu-button" aria-label="Toggle navigation menu" onclick="toggleMenu(this)">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <nav class="nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="https://emus4ios.github.io">My GitHub</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+                <li><a href="proj-1.html">About Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+
+    <div class="content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am Mohamed Ayman, a web developer with 4 years of experience. Below are some of my projects:</p>
+        <div class="project">
+            <h2>Emus4ios</h2>
+            <p>This is an iOS tweaked app store that allows you to sideload iOS emulators outside of the App Store.</p>
+            <a href="https://emus4ios.github.io" class="btn">Visit Emus4ios</a>
+        </div>
+        <div class="project">
+            <h2>CSFW Project</h2>
+            <p>THIS is a project in whcih i show new  web developers on how to write and create css code </p>
+            <a href="https://cfsw-project.github.io/csfw.gitHub.io/" class="btn">Check Out this project</a>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu(button) {
+            button.classList.toggle("change");
+            document.querySelector('.nav').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
+
+
+<style>
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("IMG_0856.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.menu {
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    width: 37px;
+    height: 6px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.change .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.change .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.change .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+.nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 20px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav ul li {
+    margin: 10px 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav.show {
+    display: inline-block;
+    animation: fadeIn 0.5s;
+}
+
+.content {
+    padding: 50px 20px;
+    animation: content 1s ease-out;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.skills {
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: red;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+@keyframes content {
+    0% {
+        transform: translateX(-800px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav {
+        display: flex;
+        position: static;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .nav ul {
+        flex-direction: row;
+    }
+
+    .nav ul li {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+</style>
