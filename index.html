@@ -2,10 +2,23 @@
 
 <div class="container">
   <ul class="nav" aria-label="Main Navigation">
-    <li class="item" aria-label="About Me">about me</li>
-    <li class="item" aria-label="GitHub">github</li>
-    <li class="item" aria-label="CSFW Project">CSFW project</li>
-    <li class="item" aria-label="Weather App">weather App</li>
+    <li class="item" aria-label="About Me"> <a href="aboutme.html">
+    about me
+    </a>
+    </li>
+    <li class="item" aria-label="GitHub">
+    <a href="https://github.com/CFSW-Project/">
+    github
+    </a>
+    </li>
+    <li class="item" aria-label="CSFW Project">
+    <a href="https://cfsw-project.github.io/csfw.gitHub.io/" aria-label="Visit CSFW Project">
+    CSFW project</a>
+    </li>
+    <li class="item" aria-label="Weather App">
+    <a href="https://cfsw-project.github.io/WeatherApp.github.io/" aria-label="Visit Weather App">
+    weather App</a>
+    </li>
   </ul>
   
   <h1 class="title">Mohamed Ayman Portfolio</h1>
@@ -155,7 +168,7 @@ display: flex;
   box-shadow: 0 29px 52px rgba(0, 0, 0, 0.40), 0 25px 16px rgba(0, 0, 0, 0.20);
   left: 50%;
   margin-top: 250px;
-  margin-left: 30px;
+  margin-left: 100px;
   transform: translateX(-50%);
   
   display:flex;
@@ -178,7 +191,7 @@ display: flex;
     opacity: 0.5;
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-160px);
     opacity: 1;
   }
 }
@@ -202,7 +215,7 @@ display: flex;
 
 
 .poi{
-margin-left: 250px;
+margin-left: 150px;
 margin-top: 100px;
 display: flex;
 }
@@ -214,11 +227,15 @@ display: flex;
 
 
 @media (min-width: 1024px) {
- .container{width:2000px;}
- .nav{margin-left:800px;}
- .poi{margin-left:700px;}
- .main-name{margin-left:430px;}
- .btn-poi{margin-left: 500px;}
+ .container{width:1500px;
+ height: 1200px;
+ }
+ .nav{margin-left:50%;}
+ .poi{margin-left:35.5%;}
+ .main-name{margin-left:20%;}
+ .btn-poi{margin-left: 25%;}
+ .title{margin-top:15%;}
+ .text{margin-top:15%;}
 }
 
 
@@ -282,5 +299,9 @@ margin-top: 450px;
     
     font-size: 30px;
     display: flex;
+    }
+    
+    a{text-decoration:none;
+    color: white;
     }
 </style>
