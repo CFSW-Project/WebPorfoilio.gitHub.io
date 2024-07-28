@@ -1,0 +1,307 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<div class="container">
+  <ul class="nav" aria-label="Main Navigation">
+    <li class="item" aria-label="About Me"> <a href="aboutme.html">
+    about me
+    </a>
+    </li>
+    <li class="item" aria-label="GitHub">
+    <a href="https://github.com/CFSW-Project/">
+    github
+    </a>
+    </li>
+    <li class="item" aria-label="CSFW Project">
+    <a href="https://cfsw-project.github.io/csfw.gitHub.io/" aria-label="Visit CSFW Project">
+    CSFW project</a>
+    </li>
+    <li class="item" aria-label="Weather App">
+    <a href="https://cfsw-project.github.io/WeatherApp.github.io/" aria-label="Visit Weather App">
+    weather App</a>
+    </li>
+  </ul>
+  
+  <h1 class="title">Mohamed Ayman Portfolio</h1>
+  <i class="fa-solid fa-code" aria-hidden="true"></i>
+  <h3 class="text">
+    I am an HTML and CSS developer and I am currently learning and doing some JavaScript. I am familiar with basic JavaScript functions and know how to manipulate HTML and CSS effectively.
+  </h3> 
+</div>
+
+<div class="fadein">
+  <h1 class="wtf">Projects</h1>
+
+  <div class="poi" aria-label="Project Cards">
+    <div class="card" aria-label="CSS3 Project Card">
+      <i class="fab fa-css3" aria-hidden="true"></i>
+    </div>
+    <div class="card" aria-label="CSS3 Project Card">
+      <i class="fab fa-css3" aria-hidden="true"></i>
+    </div>
+  
+  </div>
+  <ul class="main-name">
+    <h2 class="item2" aria-label="CSFW Project Description"> CSFW Project</h2>
+    <h2 class="item2" aria-label="Weather App Description"> weather App</h2>
+  </ul>
+
+
+<div class="btn-poi">
+  <a href="https://cfsw-project.github.io/csfw.gitHub.io/" aria-label="Visit CSFW Project">
+    <button class="btn">visit</button>
+  </a>
+
+
+
+  <a href="https://cfsw-project.github.io/WeatherApp.github.io/" aria-label="Visit Weather App">
+    <button class="btn">visit</button>
+  </a>
+</div>
+
+
+<div class="fadein">
+  <center>
+    <br><br><br><br><br><br>
+    <h1 class="global">What is PROJECT CSFW</h1>
+    <br><br>
+    <h2 class="global">
+      The CSFW Project is a comprehensive tutorial designed to teach fundamental CSS concepts and Flexbox layout techniques to beginners. The project aims to provide a clear, hands-on approach to mastering the essentials of CSS and creating responsive web designs
+      Our main goal is to help learners understand CSS basics, including styling text, colors, and layouts, and to introduce them to Flexbox for creating flexible and responsive layouts.
+    </h2>
+    <br><br><br><br>
+    <h1 class="global">weatherApp</h1>
+    <br><br>
+    <h2 class="global">
+      The Weather App is a web application designed to provide current weather information based on user input. This project was a practical exercise to understand and utilize JavaScript APIs, along with HTML and CSS for the front-end development.
+      • Purpose:
+      • “The main goal of the Weather App was to explore how to interact with APIs, process the data received, and display it in a user-friendly manner.”
+      2. Project Features
+      • User Interface:
+      • “The app features a clean and intuitive interface built with HTML and CSS. Users can enter a location to get real-time weather updates, including temperature, weather conditions, and more.”
+      • API Integration:
+      • “The core functionality of the app relies on JavaScript to interact with a weather API. This involves sending requests to the API, handling the response, and updating the UI with the fetched data.”
+      • Dynamic Data Handling:
+      • “JavaScript is used to dynamically update the content based on user input and API responses. This includes processing JSON data, managing asynchronous operations, and handling errors.
+    </h2>
+  </center>
+</div>
+</div>
+<style>
+
+
+
+   
+
+.container {
+  background-image: url("IMG_0856.jpg");
+  height: 750px;
+  width: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -20px;
+  
+   
+  margin-left: -20px;
+display: flex;
+}
+
+.nav {
+  height: 100px;
+  width: 550px;
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  top: 30px;  /* Adjust as needed */
+  left: 350px;  /* Adjust as needed */
+}
+.item {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-left: 40px;
+  color: white;
+}
+
+.title {
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 250px;  /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fadein 1s ease-out;
+}
+
+
+.fa-solid, .fa-code {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 50px;  
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+.text {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 300px;  
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fadein 1s ease-out;
+}
+
+.wtf {
+  position: absolute;
+  margin-top: 50px;  
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+}
+
+.card {
+  width: 400px;
+  height: 390px;
+  box-shadow: 0 29px 52px rgba(0, 0, 0, 0.40), 0 25px 16px rgba(0, 0, 0, 0.20);
+  left: 50%;
+  margin-top: 250px;
+  margin-left: 100px;
+  transform: translateX(-50%);
+  
+  display:flex;
+  
+}
+
+.fab, .fa-css3 {
+  font-size: 65px;
+  margin: 150px;  Adjust as needed
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+@keyframes fadein {
+  0% {
+    transform: translateX(-1800px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-160px);
+    opacity: 1;
+  }
+}
+
+
+.text-global {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  
+ 
+  transform: translateX(-50%);
+  animation: fadein 1s ease-out;
+}
+
+
+.parent{
+display: flex;
+
+}
+
+
+.poi{
+margin-left: 150px;
+margin-top: 100px;
+display: flex;
+}
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+ .container{width:2000px;
+ height: 800px;
+ }
+ .nav{margin-left:50%;}
+ .poi{margin-left:35.5%;}
+ .main-name{margin-left:20%;}
+ .btn-poi{margin-left: 25%;}
+ .title{margin-top:15%;}
+ .text{margin-top:15%;}
+}
+
+
+
+.main-name{
+display:flex;
+margin-top: -450px;
+font-family:sans-serif ;
+}
+.item2{
+margin-left: 200px;
+}
+
+.btn{
+
+    width: 350px; /* Set the width of the button */
+    height: 100px; /* Set the height of the button to make it square */
+    background-color: transparent; /* No background color */
+    border: 2px solid black; /* Black border */
+    color: black; /* Black text color */
+    font-size: 16px; /* Font size */
+    text-align: center; /* Center text horizontally */
+    line-height: 96px; /* Center text vertically (height - border width) */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 30px;
+    margin-left: 80px;
+    
+}
+
+.btn:hover {
+    background-color: black; /* Slight background color on hover */
+
+color: white;
+}
+
+.fadein{
+animation: fadein 1s ease-out;
+}
+
+.global{
+color: black;
+font-family: sans-serif;
+
+}
+
+
+.btn a{
+text-decoration: none;
+color: black;
+}
+
+.btn a:hover{color:white;}
+
+.btn-position{display:flex;
+text-align: center;
+}
+
+.btn-poi{
+margin-top: 450px;
+    
+    
+    font-size: 30px;
+    display: flex;
+    }
+    
+    a{text-decoration:none;
+    color: white;
+    }
+</style>
