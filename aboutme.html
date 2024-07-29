@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            background-color:black;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation-name: fadein;
+            animation-play-state: running;
+            animation-iteration-count: 1;
+            animation-duration: 1s;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff9900;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        
+        @keyframes fadein {
+    0% {
+        transform: translateX(-800px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>
+        I am an HTML and CSS developer and iam currently learning and doing some  JavaScript. I am familiar with basic JavaScript functions and know how to manipulate HTML and CSS effectively.
+        
+        </p>
+    </div>
+</body>
+</html>
