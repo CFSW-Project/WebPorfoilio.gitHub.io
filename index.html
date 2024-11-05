@@ -6,24 +6,8 @@
     <title>Navigation Menu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script>
-        function toggleMenu(button) {
-            button.classList.toggle("change");
-            document.querySelector('.nav').classList.toggle('show');
-        }
-    </script>
-    <style>
-        /* Scroll fade animation styles */
-        .section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-        .section.fade-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <script src="script.js" type="text/javascript"></script>
+		
 </head>
 <body>
     <!-- Navigation Menu -->
@@ -131,23 +115,6 @@
         </div>
     </div>
 
-    <script>
-        // Scroll fade-in animation
-        document.addEventListener('DOMContentLoaded', function() {
-            var sections = document.querySelectorAll('.section');
-            
-            var observer = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
-                    }
-                });
-            }, { threshold: 0.3 });
-
-            sections.forEach(function(section) {
-                observer.observe(section);
-            });
-        });
-    </script>
+   
 </body>
 </html>
