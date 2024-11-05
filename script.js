@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to determine threshold based on screen width
     function getThreshold() {
-        return window.innerWidth < 768 ? 0.3 : 0.9; // Assuming 768px as mobile breakpoint
+        return window.innerWidth < 768 ? 0.4 : 1.0; // Assuming 768px as mobile breakpoint
     }
 
     // Create the observer with the threshold based on current screen width
