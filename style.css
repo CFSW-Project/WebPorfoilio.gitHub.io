@@ -406,7 +406,7 @@ gap:5px;
 		margin-top: -50px;
 		display: flex;
 	}
-	}
+	
 	
 	
 	.con-png {
@@ -425,7 +425,7 @@ gap:5px;
 }
 	
 
-* Default style (for mobile/tablet) */
+/* Default style (for mobile/tablet) */
 .con-png img.size {
     width: 100%;
     height:auto;
@@ -483,10 +483,6 @@ a{
     height: auto;                  /* Maintain image aspect ratio */
     max-width: 400px;              /* Limit the image size on smaller screens */
 		margin-top: -10px;
-}
-
-.item-6{margin-top:-20px;
-
 }
 
 
