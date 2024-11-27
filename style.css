@@ -368,7 +368,11 @@ gap:5px;
     }
 		
 		
-		
+		.main-3{
+			display: flex;
+			flex-direction:flex;
+			
+		}
 	
 	}
 	
@@ -494,11 +498,14 @@ a{
       padding: 20px;
       max-width:500px ;
       margin-top: 130px;
-			height: 250px;
+			height: 395px;
 			display: flex;
 			flex-direction:column;
 			align-items:center;
 		text-align: center;
+		background-color:  #191917;
+		border-radius: 10%;
+		border: 2px solid #333;
     }
 	
 
