@@ -306,7 +306,17 @@ gap:5px;
  
  .fa-solid{
 	margin-top: 2px;
+
  }
+
+.fa-solid:hover{
+
+	
+    transform: translateY(-20px);
+    transition: all 1s;
+ 
+
+}
  
  
  
