@@ -1,44 +1,75 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var sections = document.querySelectorAll('.section');
-
-    // Function to determine threshold based on screen width
-    function getThreshold() {
-        return window.innerWidth < 768 ? 0.3 : 0.5; // Assuming 768px as mobile breakpoint
-    }
-
-    // Create the observer with the threshold based on current screen width
-    var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-            }
-        });
-    }, { threshold: getThreshold() }); // Use the dynamic threshold
-
-    sections.forEach(function(section) {
-        observer.observe(section);
-    });
-
-    // Optional: Update observer if the window is resized
-    window.addEventListener('resize', function() {
-        // If the threshold needs to change on resize, you can re-create the observer
-        observer.disconnect(); // Disconnect previous observer
-        observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, { threshold: getThreshold() }); // Get the new threshold
-        
-        sections.forEach(function(section) {
-            observer.observe(section); // Re-observe the sections
-        });
-    });
-});
-
-
+// Navigation toggle functionality
 function toggleMenu(button) {
-            button.classList.toggle("change");
-            document.querySelector('.nav').classList.toggle('show');
-        }
+  button.classList.toggle("active")
+  document.querySelector(".nav-menu").classList.toggle("active")
+}
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault()
+    const target = document.querySelector(this.getAttribute("href"))
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
+    // Close mobile menu if open
+    document.querySelector(".nav-menu").classList.remove("active")
+    document.querySelector(".nav-toggle").classList.remove("active")
+  })
+})
+
+// Intersection Observer for scroll animations
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".section")
+
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fade-in")
+      }
+    })
+  }, observerOptions)
+
+  sections.forEach((section) => {
+    observer.observe(section)
+  })
+})
+
+// Active navigation link highlighting
+window.addEventListener("scroll", () => {
+  let current = ""
+  const sections = document.querySelectorAll("section")
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop
+    const sectionHeight = section.clientHeight
+    if (scrollY >= sectionTop - 200) {
+      current = section.getAttribute("id")
+    }
+  })
+
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.classList.remove("active")
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active")
+    }
+  })
+})
+
+// Add scroll effect to navbar
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar")
+  if (window.scrollY > 100) {
+    navbar.style.backgroundColor = "rgba(0, 0, 0, 0.98)"
+  } else {
+    navbar.style.backgroundColor = "rgba(0, 0, 0, 0.95)"
+  }
+})

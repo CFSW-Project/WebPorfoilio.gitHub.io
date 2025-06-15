@@ -3,101 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Mohamed Ahmed - Web Developer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
     <!-- Navigation Menu -->
-    <div class="menu">
-        <button class="menu-button" aria-label="Toggle navigation menu" onclick="toggleMenu(this)">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </button>
-        <nav class="nav" aria-label="Main navigation">
-            <ul>
-                <li><a href="https://github.com/CFSW-Project/"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                <li><a href="https://github.com/CFSW-Project/WebPorfoilio.gitHub.io"><i class="fas fa-briefcase"></i> Portfolio Code</a></li>
-                <li><a href="aboutme.html"><i class="fas fa-user"></i> About Me</a></li>
-                <li><a href="contactme.html"><i class="fas fa-envelope"></i> Contact Me</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Main Content -->
-    <div class="box section">
-        <h1 class="item-1">Digital</h1>
-        <h1 class="item-2">Experience</h1>
-        <h1 class="item-3">Website<button class="Btn"><a href="contactme.html"><i class="fa-solid fa-user"></i> Contact Me</a></button></h1>
-        <h1 class="item-4">Developer</h1>
-    </div>
-
-    <div class="con-2 section">
-        <h4 class="text2">I am an Egyptian web developer who specializes in creating efficient, functional websites using HTML, CSS, and JavaScript.</h4>
-
-        <div class="container">
-            <h6>//Socials</h6>
-            <div class="con">
-                <a href="https://github.com/CFSW-Project/WebPorfoilio.gitHub.io" class="b-tn"><i class="fa-brands fa-github"></i></a>
-                <a href="https://profile.indeed.com/p/mohameda-2nyggvm" class="b-tn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="contactme.html" class="b-tn"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/CFSW-Project/WebPorfoilio.gitHub.io" class="b-tn"><i class="fa-solid fa-code"></i></a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Mohamed</span>
             </div>
-            <div class="text">
-                <h5>Together, we shape a visionary future, delivering on promises and pioneering innovation.</h5>
-                <h6>My expertise in design, coding, and interaction empowers me to create impactful solutions that drive success.</h6>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu(this)">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="text-gradient-purple">Digital</span>
+                    <span class="text-gradient-yellow">Experience</span>
+                    <span class="text-white">Website</span>
+                    <span class="text-gradient-cyan">Developer</span>
+                </h1>
+                <p class="hero-description">
+                    <center>
+                    I am an Egyptian web developer who specializes in creating efficient, functional websites using HTML, CSS, and JavaScript.
+                    </center>
+                    <br>
+                    <br>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Contact Me
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i>
+                        View Work
+                    </a>
+                </div>
+            </div>
+            <div class="hero-socials">
+                <span class="socials-label">//Socials</span>
+                <div class="social-links">
+                    <a href="https://github.com/CFSW-Project/" class="social-btn" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://profile.indeed.com/p/mohameda-2nyggvm" class="social-btn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:xiamen436@gmail.com" class="social-btn" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/CFSW-Project/WebPorfoilio.gitHub.io" class="social-btn" aria-label="Portfolio Code">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <button class="Btn">
-            <a href="aboutme.html">About Me</a>
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Hello! I'm Mohamed Ahmed, a passionate web developer from Egypt with a mission to make web development accessible and understandable for everyone.
+                    </p>
+                    <p>
+                        My journey in web development has led me to specialize in creating efficient, functional websites using modern technologies like HTML5, CSS3, and JavaScript. I believe in the power of clean code and intuitive design to create meaningful digital experiences.
+                    </p>
+                    <p>
+                        One of my proudest achievements is <strong>Project OverSimplified</strong> - a learning platform I created to help developers master CSS concepts from basics to advanced topics like Flexbox and Grid. This project reflects my commitment to education and my ability to break down complex concepts into digestible lessons.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-code"></i>
+                            <span>Clean, efficient code</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive design</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Creative problem solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-sass"></i>
+                            <span>Sass</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Color Theory</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-drafting-compass"></i>
+                            <span>Wireframing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bug"></i>
+                            <span>Debugging</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- What I Do Section -->
-    <div class="poi-66 section">
-        <h1>What I Do</h1>
-        <div class="container-2">
-            <div class="box-2">
-                <h3 class="text-poi"><i class="fa fa-paint-brush" aria-hidden="true"></i> UI/UX</h3>
-                <h6>Designing interfaces that are easy, good, and enjoyable to use.</h6>
-            </div>
-            <div class="box-2">
-                <h3 class="text-poi"><i class="fa-solid fa-laptop"></i> Web Development</h3>
-                <h6>I make websites fully functional with features like signup, login, and navigation.</h6>
-            </div>
-            <div class="box-2">
-                <h3 class="text-poi"><i class="fa-solid fa-check"></i> Design Process</h3>
-                <h6>I sketch my ideas first to avoid bad designs before going digital.</h6>
-            </div>
-            <div class="box-2">
-                <h3 class="text-poi"><i class="fa-solid fa-bug"></i> Quality Development</h3>
-                <h6>I thoroughly test my websites to minimize potential bugs.</h6>
+    <section class="services section">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing interfaces that are intuitive, accessible, and enjoyable to use, focusing on user experience and visual appeal.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Building fully functional websites with modern features like responsive design, interactive elements, and smooth animations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Design Process</h3>
+                    <p>Following a structured approach from wireframing to final implementation, ensuring quality and attention to detail.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>Thoroughly testing websites across different devices and browsers to ensure optimal performance and user experience.</p>
+                </div>
             </div>
         </div>
-        <h1 style="color: #fff5be;">My Projects</h1>
-    </div>
+    </section>
 
     <!-- Projects Section -->
-    <div class="main-3 section">
-        <div class="con-3" id="con-3">
-            <h3>Project OverSimplified</h3>
-            <img class="size" src="httpscfsw-project.github.io.png" />
-            <button class="Btn-2">
-                <a href="https://cfsw-project.github.io">See Project <i class="fa-solid fa-arrow-right"></i></a>
-            </button>
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="httpscfsw-project.github.io.png" alt="Project OverSimplified" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://cfsw-project.github.io" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/CFSW-Project/" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project OverSimplified</h3>
+                        <p>A comprehensive learning platform designed to make CSS accessible for everyone. Features structured learning paths covering CSS basics, Flexbox, and Grid with interactive examples and clear explanations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Education</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="weather app.png" alt="Weather App" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://cfsw-project.github.io/WeatherApp.github.io/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/CFSW-Project/" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather App</h3>
+                        <p>A clean and intuitive weather application that provides real-time weather information for any city. Features a minimalist design with smooth user interactions and responsive layout.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="con-3">
-            <h3>WeatherApp</h3>
-            <img class="size" src="weather app.png" />
-            <button class="Btn-2">
-                <a href="https://cfsw-project.github.io/WeatherApp.github.io/">See Project <i class="fa-solid fa-arrow-right"></i></a>
-            </button>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:xiamen436@gmail.com">xiamen436@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/CFSW-Project/" target="_blank">CFSW-Project</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://profile.indeed.com/p/mohameda-2nyggvm" target="_blank">Mohamed Ahmed</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mohamed Ahmed. All rights reserved.</p>
+            <p>Together, we shape a visionary future, delivering on promises and pioneering innovation.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
